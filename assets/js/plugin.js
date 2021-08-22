@@ -265,6 +265,7 @@ $(document).ready(function(){
 		rtl: true,
 		autoplay: true,
 		autoplaySpeed: 5000,
+		dots: true
 	});
 	/* -- ./Main Slider -- */
 
