@@ -688,10 +688,35 @@ $(document).ready(function(){
 	} else {
 		$('.category-page .cat-box .cat-area').each(function(){
 			$(this).css({
-				'max-height' : 'auto'
+				'max-height' : 'none'
 			});
 		});
 	}
+	$(window).on('resize',function(){
+		if ($(window).innerWidth() <= 991) {
+			var section_list_height = $('.category-page .cat-box ul.cat-list').innerHeight();
+			if ($(window).innerHeight() > section_list_height) {
+				$('.category-page .cat-box .cat-area').each(function(){
+					$(this).css({
+						'max-height' : 'calc(' + $(window).innerHeight() + 'px - 75px)'
+					});
+				});
+			} else {
+				$('.category-page .cat-box .cat-area').each(function(){
+					$(this).css({
+						'max-height' : section_list_height + 'px'
+					});
+				});
+			}
+		} else {
+			console.log($(window).innerWidth() <= 991);
+			$('.category-page .cat-box .cat-area').each(function(){
+				$(this).css({
+					'max-height' : 'none'
+				});
+			});
+		}
+	});
 	/* ====== ./Category Page ====== */ 
 
 	/* -- Tracking Order -- */

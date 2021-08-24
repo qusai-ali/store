@@ -2363,8 +2363,7 @@ footer .down-footer .socail-links li {
 
 /* -- Category Page -- */
 .category-page {
-  width: calc(100% - 20px);
-  margin: 0 10px;
+  width: 100%;
   background: #f2f2f2;
   border: 1px solid #e1e1e1;
 }
@@ -3927,6 +3926,9 @@ footer .down-footer .socail-links li {
 .payment-page .white-box > ul > li.button a:hover {
   background: #f0c14b;
 }
+.payment-page .white-box > ul > li.link-box{
+  position: relative;
+}
 .payment-page .white-box > ul > li.link-box a {
   display: inline-block;
   padding: 5px 10px;
@@ -4018,6 +4020,10 @@ footer .down-footer .socail-links li {
   font-size: 15px;
   font-weight: bold;
   margin-top: 15px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
 }
 .payment-page .order-note {
   background: #fff;
@@ -4062,6 +4068,22 @@ footer .down-footer .socail-links li {
   background: #f8d7da;
   border-color: #f8d7da;
   color: #721c24;
+}
+.payment-page.failed-page .white-box .yellow-btn {
+  margin-right: 10px;
+  background: #f3a847;
+}
+.payment-page.failed-page .white-box .yellow-btn:hover {
+  background: #f0c14b;
+}
+.payment-page.failed-page .white-box .red-btn {
+  position: absolute;
+  left: 125px;
+  top: 10px;
+  background: #a00;
+}
+.payment-page.failed-page .white-box .red-btn:hover {
+  background: #f00;
 }
 /* -- ./Payment Faild Page -- */
 
