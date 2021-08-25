@@ -748,6 +748,9 @@
     }
 }
 @media (max-width: 767px) {
+    .category-page {
+        margin-top: 40px;
+    }
     .category-page .cat-box .sub-cat {
         flex: 0 0 100%;
     }
@@ -1307,26 +1310,22 @@
 /* -- Payment Faild Page -- */
 @media (max-width: 600px) {
     .payment-page.failed-page .white-box .link-box {
-        display: flex;
+        padding-bottom: 90px;
     }
     .payment-page.failed-page .white-box .link-box .red-btn {
         position: static;
     }
-    .payment-page.failed-page .white-box .link-box > a {
-        flex: 0 0 25%;
-    }
-    .payment-page.failed-page .white-box .link-box > a:last-child {
-        flex: 0 0 calc(25% - 5px);
-        margin-left: 5px;
-    }
     .payment-page.failed-page .white-box .link-box > span {
-        flex: 0 0 50%;
-        padding-left: 5px;
+        position: absolute;
+        right: 15%;
+        left: 15%;
+        top: 50px;
+        text-align: center;
+        margin: 0;
     }
     .payment-page.failed-page .white-box .link-box > span a {
         margin: 0;
-        width: 100%;
-        display: block;
+        width: 180px;
     }
     .payment-page.failed-page .white-box .link-box > span a:first-child {
         margin-bottom: 5px;
@@ -1336,7 +1335,6 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        float: none !important;
     }
 }
 /* -- ./Payment Faild Page -- */
