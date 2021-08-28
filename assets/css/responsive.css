@@ -748,6 +748,9 @@
     }
 }
 @media (max-width: 767px) {
+    .category-page {
+        margin-top: 40px;
+    }
     .category-page .cat-box .sub-cat {
         flex: 0 0 100%;
     }
@@ -1307,26 +1310,22 @@
 /* -- Payment Faild Page -- */
 @media (max-width: 600px) {
     .payment-page.failed-page .white-box .link-box {
-        display: flex;
+        padding-bottom: 90px;
     }
     .payment-page.failed-page .white-box .link-box .red-btn {
         position: static;
     }
-    .payment-page.failed-page .white-box .link-box > a {
-        flex: 0 0 25%;
-    }
-    .payment-page.failed-page .white-box .link-box > a:last-child {
-        flex: 0 0 calc(25% - 5px);
-        margin-left: 5px;
-    }
     .payment-page.failed-page .white-box .link-box > span {
-        flex: 0 0 50%;
-        padding-left: 5px;
+        position: absolute;
+        right: 15%;
+        left: 15%;
+        top: 50px;
+        text-align: center;
+        margin: 0;
     }
     .payment-page.failed-page .white-box .link-box > span a {
         margin: 0;
-        width: 100%;
-        display: block;
+        width: 180px;
     }
     .payment-page.failed-page .white-box .link-box > span a:first-child {
         margin-bottom: 5px;
@@ -1336,7 +1335,143 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        float: none !important;
     }
 }
 /* -- ./Payment Faild Page -- */
+
+/* -- User Profile Page -- */
+@media (max-width: 991px) {
+    .user-profile {
+        margin: 0;
+        padding: 0;
+    }
+    .user-profile .row {
+        margin: 0;
+    }
+    .user-profile .row .col-12 {
+        padding: 0;
+    }
+    .user-profile .white-box {
+        background: transparent;
+        padding: 0;
+        border: 0;
+    }
+    .user-profile .links-box {
+        height: auto;
+        border: 0;
+    }
+    .user-profile .main-title {
+        margin-bottom: 30px;
+    }
+    .user-profile h4 {
+        border: 0;
+        padding-right: 5px;
+        color: #56696f;
+        font-size: 21px;
+    }
+    .user-profile ul {
+        border: 1px solid #e1e1e1;
+        background: #fff;
+        padding: 0;
+    }
+    .user-profile ul li {
+        padding: 10px 15px 10px 10px;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .user-profile ul li:last-child {
+        border: 0;
+    }
+    .user-profile ul li svg.fa-angle-left {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+    }
+    .user-profile ul li a {
+        color: #444;
+    }
+}
+@media (max-width: 770px) {
+    .user-profile .main-title {
+        margin-top: 55px;
+    }
+}
+/* -- ./User Profile Page -- */
+
+/* -- Support Page -- */
+@media (max-width: 991px) {
+    .support-page .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .support-page .col-12 {
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 770px) {
+    .support-page .main-title {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 420px) {
+    .support-page .main-title {
+        font-size: 16px;
+        text-align: center;
+    }
+    .support-page .main-title img {
+        width: 60px;
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
+/* -- ./Support Page -- */
+
+/* -- Password & Protection Page -- */
+@media (max-width: 770px) {
+    .password-protection {
+        padding-top: 20px;
+    }
+}
+@media (max-width: 450px) {
+    .password-protection .group {
+        display: block;
+        position: relative;
+    }
+    .password-protection .group .btn-area a {
+        padding: 5px 6px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        z-index: 2;
+        left: 10px;
+        top: 10px;
+        margin-top: 0;
+    }
+    .password-protection .group .btn-area a svg {
+        font-size: 17px;
+    }
+}
+/* -- ./Password & Protection Page -- */
+
+/* -- Password Edit Page -- */
+@media (max-width: 450px) {
+    .password-edit-page .btn-box {
+        text-align: center;
+    }
+}
+/* -- ./Password Edit Page -- */
+
+
+/* -- Account verification Page -- */
+@media (max-width: 450px) {
+    .account-verification-page form .group  {
+        display: flex;
+    }
+    .account-verification-page .group .info {
+        line-height: 1.5;
+    }
+}
+/* -- ./Account verification Page -- */
