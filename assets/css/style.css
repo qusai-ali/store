@@ -4087,12 +4087,415 @@ footer .down-footer .socail-links li {
 }
 /* -- ./Payment Faild Page -- */
 
+/* -- User Profile Page -- */
+.user-profile {
+  padding: 10px;
+}
+.user-profile .white-box {
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+}
+.user-profile .main-title {
+  text-align: center;
+  color: var(--orange);
+  font-size: 16px;
+  margin: 15px 0 25px;
+}
+.user-profile .main-title svg {
+  color: #00365c;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.user-profile h4 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px 15px;
+}
+.user-profile .links-box {
+  border: 1px solid #e1e1e1;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.user-profile ul {
+  padding: 15px;
+}
+.user-profile ul li {
+  padding: 8px 0;
+  font-size: 14px;
+}
+.user-profile ul li a {
+  font-weight: bold;
+  color: #007bff;
+}
+.user-profile ul li a:hover {
+  color: #56696f;
+}
+.user-profile ul li svg {
+  margin-left: 5px;
+  color: #444;
+  font-size: 16px;
+}
+.user-profile ul li svg.fa-angle-left {
+  float: left;
+  display: none;
+}
+/* -- ./User Profile Page -- */
 
 
+/* -- Support Page -- */
+.support-page {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: -webkit-linear-gradient(-45deg,#eaeaea 40%,#f2f2f2 40.001%,#f2f2f2 100%);
+  background: -moz-linear-gradient(-45deg,#eaeaea 40%,#f2f2f2 40.001%,#f2f2f2 100%);
+  background: -ms-linear-gradient(-45deg,#eaeaea 40%,#f2f2f2 40.001%,#f2f2f2 100%);
+  background: -o-linear-gradient(-45deg,#eaeaea 40%,#f2f2f2 40.001%,#f2f2f2 100%);
+  background: linear-gradient(-45deg,#eaeaea 40%,#f2f2f2 40.001%,#f2f2f2 100%);
+}
+.support-page .main-title {
+  text-align: center;
+  color: #00365c;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.support-page .main-title img {
+  width: 70px;
+  margin-left: 5px;
+}
+.support-page .col-12 {
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.support-page .support-box {
+  text-align: center;
+  background: #fff;
+  padding: 15px 15px 45px;
+  border: 1px solid #e1e1e1;
+  height: 100%;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.02);
+  -moz-box-shadow: 0 0 5px 5px rgba(0,0,0,0.02);
+  -ms-box-shadow: 0 0 5px 5px rgba(0,0,0,0.02);
+  -o-box-shadow: 0 0 5px 5px rgba(0,0,0,0.02);
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.02);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.support-page .support-box:hover {
+  -webkit-box-shadow: 0 0 10px rgba(243, 168, 71, 0.5);
+  -moz-box-shadow: 0 0 10px rgba(243, 168, 71, 0.5);
+  -ms-box-shadow: 0 0 10px rgba(243, 168, 71, 0.5);
+  -o-box-shadow: 0 0 10px rgba(243, 168, 71, 0.5);
+  box-shadow: 0 0 10px rgba(243, 168, 71, 0.5);
+}
+.support-page .support-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.support-page .support-box img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+.support-page .support-box h3 {
+  color: #00365c;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.support-page .support-box p {
+  color: #aaa;
+  line-height: 1.5;
+  text-align: justify;
+}
+.support-page .support-box span {
+  position: absolute;
+  z-index: 2;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  color: #6095a5;
+}
+.support-page .support-box:hover span {
+  color: var(--orange);
+}
+/* -- ./Support Page -- */
+
+/* -- Password & Protection Page -- */
+.password-protection {
+  width: 600px;
+  max-width: 100%;
+  margin: 25px auto;
+  padding: 0 5px;
+}
+.breabcarmb {
+  margin-bottom: 15px;
+}
+.breabcarmb li {
+  display: inline-block;
+  padding-left: 5px;
+  font-size: 14px;
+}
+.breabcarmb li svg.fa-angle-left {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #444;
+}
+.breabcarmb li a {
+  color: #007bff;
+}
+.breabcarmb li span {
+  color: var(--orange);
+}
+.password-protection h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.password-protection .white-box {
+  background: #fff;
+  border: 1px solid #e1e1e1;
+}
+.password-protection .group {
+  padding: 10px 15px;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+}
+.password-protection .group:last-child {
+  border: 0;
+}
+.password-protection .group .info {
+  flex: 0 0 calc(100% - 130px);
+}
+.password-protection .group .btn-area {
+  flex: 0 0 130px;
+}
+.password-protection .group span {
+  font-weight: bold;
+  color: #444;
+  display: block;
+}
+.password-protection .group span.light {
+  color: #aaa;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.password-protection .group .btn-area a {
+  background: #002845;
+  display: block;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  padding: 7px 5px;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  margin-top: 7px;
+}
+.password-protection .group .btn-area a:hover {
+  background: #00365c;
+}
+.password-protection .group .btn-area a svg {
+  font-size: 12px;
+  margin-left: 5px;
+}
+/* -- ./Password & Protection Page -- */
 
 
+/* -- Password Edit Page -- */
+.password-edit-page .group {
+  position: relative;
+  border: 0;
+}
+.password-edit-page label {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  padding: 3px 0;
+  font-weight: bold;
+  font-size: 13px;
+  color: #999;
+  cursor: text;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.password-edit-page input {
+  display: block;
+  width: 100%;
+  padding: 20px 15px 10px;
+  border: 1px solid #eee;
+  background: #fff !important;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.password-edit-page input:focus {
+  border: 1px solid #00365c6e;
+}
+.password-edit-page input.not-empty ~ label,
+.password-edit-page input:focus ~ label {
+  top: 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.password-edit-page input[type="password"] {
+  padding-left: 30px;
+}
+.password-edit-page .show-password {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 20px;
+  height: 30px;
+}
+.password-edit-page .show-password svg {
+  color: #555;
+  opacity: 0.5;
+  position: absolute;
+}
+.password-edit-page .show-password:hover svg {
+  opacity: 1;
+}
+.password-edit-page .show-password.shown svg,
+.password-edit-page .show-password svg.fa-eye-slash {
+  display: none;
+}
+.password-edit-page .show-password.shown svg.fa-eye-slash {
+  display: block;
+}
+.password-edit-page form {
+  padding: 10px 0;
+  border: 1px solid #e1e1e1;
+  background: #fff;
+}
+.password-edit-page form button {
+  padding: 5px 15px;
+  background: #002845;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
+.password-edit-page form button:hover {
+  background: #00365c;
+}
+.password-edit-page form button svg {
+  margin-left: 5px;
+}
+/* -- ./Password Edit Page -- */
 
+/* -- Account verification Page -- */
 
+/* On - OFF Button */
+.yes-no-btn .knobs,
+.yes-no-btn .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.yes-no-btn {
+  position: relative;
+  width: 74px;
+  height: 34px;
+  overflow: hidden;
+}
+.yes-no-btn,
+.yes-no-btn .layer {
+  border-radius: 100px;
+}
+.yes-no-btn .checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+.yes-no-btn .knobs {
+  z-index: 2;
+}
+.yes-no-btn .layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+.yes-no-btn .knobs:before {
+  content: "ON";
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03a9f4;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+.yes-no-btn .checkbox:not(:checked) + .knobs:before {
+  content: "OFF";
+  right: 42px;
+  background-color: #f44336;
+}
+.yes-no-btn .checkbox:not(:checked) ~ .layer {
+  background-color: #fcebeb;
+}
+.yes-no-btn .knobs,
+.yes-no-btn .knobs:before,
+.yes-no-btn .layer {
+  transition: 0.3s ease all;
+}
+/* ./ON - OFF Button */
 
+.account-verification-page .yes-no-btn {
+  float: left;
+}
+.account-verification-page form .group {
+  flex-wrap: wrap;
+}
+.account-verification-page .group .info {
+  line-height: 2;
+}
+.account-verification-page form button {
+  padding: 5px 15px;
+  background: #002845;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
+.account-verification-page form small {
+  flex: 0 0 100%;
+  margin-bottom: 10px;
+}
+.account-verification-page form button:hover {
+  background: #00365c;
+}
+.account-verification-page form button svg {
+  margin-left: 5px;
+}
 
-
+/* -- ./Account verification Page -- */

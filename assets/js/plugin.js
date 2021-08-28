@@ -906,7 +906,18 @@ $(document).ready(function(){
 	});
 	/* -- ./Search Results Page -- */
 
-
+	/* -- Password Edit Page -- */
+	$('.password-edit-page .group input').on('change',function(){
+		if ($(this).val()) {
+			$(this).addClass('not-empty');
+		} else {
+			$(this).removeClass('not-empty');
+		}
+	});
+	$('.password-edit-page .group label').on('click',function(){
+		$(this).siblings('input').focus();
+	});
+	/* -- ./Password Edit Page -- */
 
 });
 
