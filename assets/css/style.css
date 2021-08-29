@@ -4093,66 +4093,6 @@ footer .down-footer .socail-links li {
 .product-maylike {
   padding: 10px 0px;
 }
-/* -- ./Popular Category Page -- */
-
-/* -- User Profile Page -- */
-.user-profile {
-  padding: 10px;
-}
-.user-profile .white-box {
-  padding: 15px;
-  background: #fff;
-  border: 1px solid #e1e1e1;
-}
-.user-profile .main-title {
-  text-align: center;
-  color: var(--orange);
-  font-size: 16px;
-  margin: 15px 0 25px;
-}
-.user-profile .main-title svg {
-  color: #00365c;
-  font-size: 20px;
-  margin-left: 5px;
-}
-.user-profile h4 {
-  font-size: 16px;
-  color: #444;
-  margin-bottom: 0;
-  border-bottom: 1px solid #e1e1e1;
-  padding: 10px 15px;
-}
-.user-profile .links-box {
-  border: 1px solid #e1e1e1;
-  height: 100%;
-  margin-bottom: 10px;
-}
-.user-profile ul {
-  padding: 15px;
-}
-.user-profile ul li {
-  padding: 8px 0;
-  font-size: 14px;
-}
-.user-profile ul li a {
-  font-weight: bold;
-  color: #007bff;
-}
-.user-profile ul li a:hover {
-  color: #56696f;
-}
-.user-profile ul li svg {
-  margin-left: 5px;
-  color: #444;
-  font-size: 16px;
-}
-.user-profile ul li svg.fa-angle-left {
-  float: left;
-  display: none;
-}
-/* -- ./User Profile Page -- */
-
-
 .popular-category-header,
 .product-maylike-header {
   color: #212121;
@@ -4188,8 +4128,6 @@ footer .down-footer .socail-links li {
 .product-maylike-body::-webkit-scrollbar-thumb:hover {
   background: transparent;
 }
-
-
 .product-maylike-item img {
   width: 100%;
   object-fit: contain;
@@ -4302,19 +4240,64 @@ footer .down-footer .socail-links li {
   font-weight: bold;
   border-radius: 3px 7px 0px 22px;
 }
-/* .product-maylike-item .save-flag span:after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -15px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 22px 15px;
-  border-color: transparent transparent #d00 transparent;
-  content: "";
-} */
 /* -- ./Popular Category Page -- */
+
+/* -- User Profile Page -- */
+.user-profile {
+  padding: 10px;
+}
+.user-profile .white-box {
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+}
+.user-profile .main-title {
+  text-align: center;
+  color: var(--orange);
+  font-size: 16px;
+  margin: 15px 0 25px;
+}
+.user-profile .main-title svg {
+  color: #00365c;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.user-profile h4 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px 15px;
+}
+.user-profile .links-box {
+  border: 1px solid #e1e1e1;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.user-profile ul {
+  padding: 15px;
+}
+.user-profile ul li {
+  padding: 8px 0;
+  font-size: 14px;
+}
+.user-profile ul li a {
+  font-weight: bold;
+  color: #007bff;
+}
+.user-profile ul li a:hover {
+  color: #56696f;
+}
+.user-profile ul li svg {
+  margin-left: 5px;
+  color: #444;
+  font-size: 16px;
+}
+.user-profile ul li svg.fa-angle-left {
+  float: left;
+  display: none;
+}
+/* -- ./User Profile Page -- */
 
 /* -- Support Page -- */
 .support-page {
