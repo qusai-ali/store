@@ -946,6 +946,46 @@ $(document).ready(function(){
 	});
 	/* -- ./Account Edit Page -- */
 
+	/* -- Edit Address Page -- */
+	$('.address-edit-page .group input').on('change',function(){
+		if ($(this).val()) {
+			$(this).addClass('not-empty');
+		} else {
+			$(this).removeClass('not-empty');
+		}
+	});
+	$('.address-edit-page .group label').on('click',function(){
+		$(this).siblings('input').focus();
+	});
+	$('.address-edit-page .group .selected-state').on('click',function(){
+		if( ! $(this).hasClass('not-empty') ) {
+			$(this).find('span').toggleClass('active');
+		}
+		$(this).siblings('.select-state').slideToggle();
+	});
+	$('.select-state .close-btn').on('click',function(){
+		var parent = $(this).parent('.select-state').siblings('.selected-state');
+		if( ! parent.hasClass('not-empty') )
+		{
+			parent.find('span').toggleClass('active');
+		}
+		$(this).parents('.mid').find('.select-state').slideToggle();
+	});
+	$('.select-state ul li').on('click',function(){
+		var li_target = $(this).data('target');
+		$('.select-state ul li').each(function(){
+			$(this).removeClass('active');
+		});
+		$(this).addClass('active');
+		$(this).parents('.select-state').slideToggle();
+		$('.address-edit-page .group .selected-state ul li').each(function(){
+			$(this).removeClass('active');
+		});
+		$('.address-edit-page .group .selected-state ul').find('li[data-target="'+li_target+'"]').addClass('active');
+		$('.address-edit-page .group .selected-state').addClass('not-empty');
+	});
+	/* -- ./Edit Address Page -- */
+
 	/* -- Countries List -- */
 		/* Selection */
 		$('.countries-list li').on('click',function(){

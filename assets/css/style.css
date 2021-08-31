@@ -4085,6 +4085,10 @@ footer .down-footer .socail-links li {
   flex: 0 0 11.12%;
   max-width: 11.12%;
 }
+.product-maylike .col-lg-2 {
+  flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
 .product-maylike-item img {
   width: 100%;
   object-fit: contain;
@@ -4840,7 +4844,7 @@ footer .down-footer .socail-links li {
 .confirm-information-page > a {
   position: absolute;
   left: 5px;
-  top: 35px;
+  top: -2px;
   font-size: 16px;
   background: transparent;
   color: #002845;
@@ -4862,7 +4866,7 @@ footer .down-footer .socail-links li {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.confirm-information-page .group span {
+.confirm-information-page .group a {
   position: absolute;
   top: calc(100% - 11px);
   right: 27px;
@@ -5059,13 +5063,13 @@ footer .down-footer .socail-links li {
   border-bottom: 1px dashed #f1f1f1;
 }
 .address-page .address-item .address-body li svg {
-  font-size: 17px;
+  font-size: 15px;
 }
 .address-page .address-item .address-body li p {
   display: inline-block;
   margin-right: 2px;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -5073,7 +5077,7 @@ footer .down-footer .socail-links li {
   -ms-user-select: none;
 }
 .address-page .address-item .address-body li span {
-  font-size: 15px;
+  font-size: 14px;
   display: inline-block;
   font-weight: 500;
   margin-right: 10px;
@@ -5437,34 +5441,114 @@ footer .down-footer .socail-links li {
 }
 .group .group-input div.mid {
   margin: 0px 8px;
-}
-.group .group-input div.mid select {
-  appearance: none;
-  margin: 0;
-  width: 100%;
-  padding: 10px 15px;
-  border: 1px solid #e1e1e1;
-  outline: none;
-  background: white;
-  height: 100%;
-  cursor: pointer;
   position: relative;
 }
-.group .group-input div.mid select::after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: "";
-  width: 1px;
-  height: 2px;
-  background-color: var(--orange);
-  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+.group .group-input div.mid .selected-state {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px 18px;
+  border: 1px solid #eee;
+  background: white;
+  cursor: pointer;
+  color: black;
+  position: relative;
 }
-.group .group-input div.mid select.not-empty ~ label,
-.group .group-input div.mid select:focus ~ label {
+.group .group-input div.mid .selected-state span {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  padding: 3px 0;
+  font-weight: bold;
+  font-size: 13px;
+  color: #999;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.group .group-input div.mid .selected-state span.active {
   top: -4px;
   font-size: 12px;
-  font-weight: normal;
+}
+.group .group-input div.mid .selected-state ul {
+  padding: 0;
+  margin: 0;
+}
+.group .group-input div.mid .selected-state li {
+  display: none;
+}
+.group .group-input div.mid .selected-state li.active {
+  display: inline-block;
+}
+.group .group-input div.mid .select-state {
+  display: none;
+  position: absolute;
+  top: 101%;
+  left: 0;
+  right: 1px;
+  z-index: 3;
+  overflow-y: scroll;
+  max-height: 185px;
+  background-color: white;
+  box-shadow: 0px 4px 7px 3px #eee;
+  scrollbar-width: thin;
+  scrollbar-color: #aaa #eee;
+}
+.group .group-input div.mid .select-state::-webkit-scrollbar {
+  width: 4px;
+}
+.group .group-input div.mid .select-state::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #eee;
+}
+.group .group-input div.mid .select-state::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+.group .group-input div.mid .select-state::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+.group .group-input div.mid .select-state .close-btn {
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  background-color: #aaa;
+  padding: 0px 5px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+}
+.group .group-input div.mid .select-state ul li {
+  padding: 7px 17px;
+  color: #7b7b7b;
+  cursor: pointer;
+  border-bottom: 1px dashed #eee;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+.group .group-input div.mid .select-state ul li:last-child {
+  border-bottom: none;
+}
+.group .group-input div.mid .select-state ul li.active {
+  background-color: #eee;
+  color: black;
+}
+.group .group-input div.mid .select-state ul li:hover {
+  background-color: #eee;
+  color: black;
 }
 .group .default-address {
   display: flex;
