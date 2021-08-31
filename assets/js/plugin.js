@@ -19,6 +19,7 @@ $(document).ready(function(){
 		zoom : false,
 		watchOverflow: false,
 		noSwiping: true, 
+		loop: true,
 		direction:'horizontal',
 		allowTouchMove: false,
         speed: 1400,
@@ -919,73 +920,106 @@ $(document).ready(function(){
 	});
 	/* -- ./Password Edit Page -- */
 
-	    /* ========= Countries List ========== */
-    /* Selection */
-    $('.countries-list li').on('click',function(){
-        $(this).parent().parent().siblings('.selected-box').children('ul').children('li').removeClass('show');
-        $(this).parent().siblings('select').empty();
-        $(this).toggleClass('checked');
-        $(this).parent().children('li').each(function(){
-            if (!$(this).hasClass('checked')) {
-                $('.select-country .all-btn').removeClass('open');
-                /* Show selected countries in box */
-                var temp = $(this).data('value');
-                    temp = 'li[data-value="' + temp + '"]';
-                $(this).parent().parent().siblings('.selected-box').children('ul').children(temp).removeClass('show');
-                /* ./Show selected countries in box */
-            } else {
-                /* Show selected countries in box */
-                if(!$(this).hasClass('no-results')) {
-                    var temp = $(this).data('value'),
-                        option_select = '<option value="' + temp + '">' + temp +'</option>';
-                        temp = 'li[data-value="' + temp + '"]';
-                    $(this).parent().parent().siblings('.selected-box').children('ul').children(temp).addClass('show');
-                    $(this).parent().siblings('select').append(option_select);
-                }
-                /* ./Show selected countries in box */
-            }
-        });
-    });
-    /* ./Selection */
-    /* Search */
-    $('.select-country .search input').keyup(function(){
-        var input_val = $(this).val();
-        if (input_val == '') {
-            $(this).parent().siblings('.countries-list').children('li').fadeIn(100);
-            $(this).parent().siblings('.countries-list').children('li.no-results').fadeOut(100);
-        } else {
-            var count = 0;
-            $(this).parent().siblings('.countries-list').children('li').each(function(){
-                if (!$(this).hasClass('no-results')){
-                    var el_val = $(this).data('value');
-                    if(el_val.includes(input_val)) {
-                        $(this).fadeIn(100);
-                        count++;
-                    } else {
-                        $(this).fadeOut(100);
-                    }
-                }
-            });
-            
-            if (count == 0) {
-                $(this).parent().siblings('.countries-list').children('li.no-results').fadeIn(10);
-            } else {10
-                $(this).parent().siblings('.countries-list').children('li.no-results').fadeOut(10);
-            }
-        }
-    });
-    /* ./Search */
-    /* Open Countries List */
-    $('.select-country-box .selected-box').on('click',function(){
-        $(this).siblings('.select-country').addClass('open');
-    });
-    /* ./Open Countries List */
-    /* Close Countries List */
-    $('.select-country .close-btn').on('click',function(){
-        $(this).parent('.select-country').removeClass('open');
-    });
-    /* ./Close Countries List */
-    /* ========= ./Countries List ========== */
+	/* -- Confirm Information Page -- */
+	$('.confirm-information-page .group input').on('change',function(){
+		if ($(this).val()) {
+			$(this).addClass('not-empty');
+		} else {
+			$(this).removeClass('not-empty');
+		}
+	});
+	$('.confirm-information-page .group label').on('click',function(){
+		$(this).siblings('input').focus();
+	});
+	/* -- ./Confirm Information Page -- */
+
+	/* -- Account Edit Page -- */
+	$('.account-edit-page .group input').on('change',function(){
+		if ($(this).val()) {
+			$(this).addClass('not-empty');
+		} else {
+			$(this).removeClass('not-empty');
+		}
+	});
+	$('.account-edit-page .group label').on('click',function(){
+		$(this).siblings('input').focus();
+	});
+	/* -- ./Account Edit Page -- */
+
+	/* -- Countries List -- */
+		/* Selection */
+		$('.countries-list li').on('click',function(){
+			$(this).parent().parent().siblings('.selected-box').children('ul').children('li').removeClass('show');
+			$(this).parent().siblings('select').empty();
+			$(this).toggleClass('checked');
+			$(this).parent().children('li').each(function(){
+				if (!$(this).hasClass('checked')) {
+					$('.select-country .all-btn').removeClass('open');
+					/* Show selected countries in box */
+					var temp = $(this).data('value');
+						temp = 'li[data-value="' + temp + '"]';
+					$(this).parent().parent().siblings('.selected-box').children('ul').children(temp).removeClass('show');
+					/* ./Show selected countries in box */
+				} else {
+					/* Show selected countries in box */
+					if(!$(this).hasClass('no-results')) {
+						var temp = $(this).data('value'),
+							option_select = '<option value="' + temp + '">' + temp +'</option>';
+							temp = 'li[data-value="' + temp + '"]';
+						$(this).parent().parent().siblings('.selected-box').children('ul').children(temp).addClass('show');
+						$(this).parent().siblings('select').append(option_select);
+					}
+					/* ./Show selected countries in box */
+				}
+			});
+		});
+		/* ./Selection */
+		/* Search */
+		$('.select-country .search input').keyup(function(){
+			var input_val = $(this).val();
+			if (input_val == '') {
+				$(this).parent().siblings('.countries-list').children('li').fadeIn(100);
+				$(this).parent().siblings('.countries-list').children('li.no-results').fadeOut(100);
+			} else {
+				var count = 0;
+				$(this).parent().siblings('.countries-list').children('li').each(function(){
+					if (!$(this).hasClass('no-results')){
+						var el_val = $(this).data('value');
+						if(el_val.includes(input_val)) {
+							$(this).fadeIn(100);
+							count++;
+						} else {
+							$(this).fadeOut(100);
+						}
+					}
+				});
+				
+				if (count == 0) {
+					$(this).parent().siblings('.countries-list').children('li.no-results').fadeIn(10);
+				} else {10
+					$(this).parent().siblings('.countries-list').children('li.no-results').fadeOut(10);
+				}
+			}
+		});
+		/* ./Search */
+		/* Open Countries List */
+		$('.select-country-box .selected-box').on('click',function(){
+			$(this).siblings('.select-country').addClass('open');
+		});
+		/* ./Open Countries List */
+		/* Close Countries List */
+		$('.select-country .close-btn').on('click',function(){
+			$(this).parent('.select-country').removeClass('open');
+		});
+		/* ./Close Countries List */
+    /* -- ./Countries List -- */
+
+	/* -- Edit Address -- */
+	$('.default-address input').on('click',function(){
+		var target_img = $(this).parent('.default-address').find('.check-box img');
+		$(target_img).toggleClass('done');
+	});
+	/* -- ./Edit Address -- */
 });
 
 
